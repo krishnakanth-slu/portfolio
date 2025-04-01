@@ -1,85 +1,6 @@
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
-
-const EducationSection = styled.section`
-  padding: 5rem 2rem;
-  background: #ffffff;
-`;
-
-const Container = styled.div`
-  max-width: 1100px;
-  margin: 0 auto;
-`;
-
-const SectionTitle = styled.h2`
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  text-align: center;
-  color: #333;
-  position: relative;
-  
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: #4285f4;
-  }
-`;
-
-const EducationCards = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 2rem;
-  justify-content: center;
-`;
-
-const EducationCard = styled(motion.div)`
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  text-align: center;
-`;
-
-const SchoolLogo = styled.div`
-  width: 200px;
-  height: 200px;
-  margin-bottom: 1.5rem;
-  
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-`;
-
-const SchoolName = styled.h3`
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 1rem;
-  font-weight: 600;
-`;
-
-const Degree = styled.h4`
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 1.5rem;
-  font-weight: 500;
-`;
-
-const Period = styled.p`
-  font-size: 1.1rem;
-  color: #333;
-  font-weight: 500;
-`;
+import React from 'react';
+import slu_logo from '../assets/images/logo_slu.jpg';
+import snist_logo from '../assets/images/snist-logo.png';
 
 const Education = () => {
   const education = [
@@ -88,45 +9,63 @@ const Education = () => {
       location: "Saint Louis, MO",
       degree: "Master's in Computer Science",
       period: "Aug 2023 – May 2025",
-      logo: "logo_slu.jpg", // Add your SLU logo here
-      gpa: "3.9/4.0"
+      logo: slu_logo,
+      
     },
     {
       school: "Sreenidhi Institute of Science and Technology",
       location: "Hyderabad, India",
       degree: "Bachelor's in Information Technology",
       period: "Aug 2018 – June 2022",
-      logo: "snist-logo.png", // Add your Sreenidhi logo here
+      logo: snist_logo,
       gpa: ""
     }
   ];
   
   return (
-    <EducationSection id="education">
-      <Container>
-        <SectionTitle>Education</SectionTitle>
+    <section id="education" className="py-5 bg-white">
+      <div className="container py-5">
+        <h2 
+          className="text-center mb-5 position-relative display-5"
+          data-aos="fade-up"
+        >
+          Education
+          <div className="position-absolute start-50 translate-middle-x mt-3" style={{width: '80px', height: '4px', background: '#4285f4', bottom: '-10px'}}></div>
+        </h2>
         
-        <EducationCards>
+        <div className="row justify-content-center">
           {education.map((edu, index) => (
-            <EducationCard 
+            <div 
+              className="col-lg-6 mb-4" 
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
             >
-              <SchoolLogo>
-                <img src={edu.logo} alt={`${edu.school} logo`} />
-              </SchoolLogo>
-              
-              <SchoolName>{edu.school}</SchoolName>
-              <Degree>{edu.degree}</Degree>
-              <Period>{edu.period}</Period>
-            </EducationCard>
+              <div className="card h-100 shadow-sm text-center p-4">
+                <div 
+                  className="mx-auto mb-4" 
+                  style={{width: '200px', height: '200px'}}
+                  data-aos="zoom-in"
+                  data-aos-delay={index * 150}
+                >
+                  <img 
+                    src={edu.logo} 
+                    alt={`${edu.school} logo`} 
+                    className="img-fluid" 
+                    style={{maxWidth: '100%', maxHeight: '100%', objectFit: 'contain'}} 
+                  />
+                </div>
+                
+                <h3 className="h4 fw-bold mb-3">{edu.school}</h3>
+                <h4 className="h5 text-muted mb-3">{edu.degree}</h4>
+                <p className="fw-bold">{edu.period}</p>
+                {edu.gpa && <p className="fw-bold">GPA: {edu.gpa}</p>}
+              </div>
+            </div>
           ))}
-        </EducationCards>
-      </Container>
-    </EducationSection>
+        </div>
+      </div>
+    </section>
   );
 };
 

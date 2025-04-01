@@ -1,114 +1,75 @@
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
-
-const AboutSection = styled.section`
-  padding: 5rem 2rem;
-  background: #ffffff;
-`;
-
-const Container = styled.div`
-  max-width: 1100px;
-  margin: 0 auto;
-`;
-
-const SectionTitle = styled.h2`
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  text-align: center;
-  color: #333;
-  position: relative;
-  
-  &:after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: #4285f4;
-  }
-`;
-
-const AboutContent = styled.div`
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-  
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
-`;
-
-const AboutImage = styled.div`
-  flex: 1;
-  
-  img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  @media (max-width: 768px) {
-    order: 1;
-    
-    img {
-      max-width: 300px;
-    }
-  }
-`;
-
-const AboutInfo = styled.div`
-  flex: 1;
-`;
-
-const AboutText = styled.p`
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #555;
-  margin-bottom: 1.5rem;
-`;
+import React from 'react';
 
 const About = () => {
   return (
-    <AboutSection id="about">
-      <Container>
-        <SectionTitle>About Me</SectionTitle>
+    <section id="about" className="py-5 bg-light">
+      <div className="container py-5">
+        <h2 
+          className="text-center mb-5 position-relative display-5"
+          data-aos="fade-up"
+        >
+          About Me
+          <div className="position-absolute start-50 translate-middle-x mt-3" style={{width: '80px', height: '4px', background: '#4285f4', bottom: '-10px'}}></div>
+        </h2>
         
-        <AboutContent>
-          <AboutImage>
-            <motion.img 
-              src="/AboutMeImg.JPG" 
-              alt="Krishnakanth Burugu"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            />
-          </AboutImage>
-          
-          <AboutInfo>
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+        <div className="row justify-content-center">
+          <div className="col-lg-10">
+            <div 
+              className="lead mb-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
             >
-              <AboutText>
-                I am a Computer Science graduate student at Saint Louis University with a strong foundation in software development, data visualization, and machine learning. My academic journey and professional experiences have equipped me with the skills needed to thrive in the tech industry.
-              </AboutText>
-              <AboutText>
-                With experience as a Team Lead, Data Visualization Associate, and Software Engineer, I have developed a diverse skill set spanning front-end and back-end development, data processing, and project management. I am passionate about creating innovative solutions that solve real-world problems.
-              </AboutText>
-              <AboutText>
-                My technical expertise includes Python, Java, C#, SQL, JavaScript, and various frameworks like React, AngularJS, and Flask. I am continuously learning and expanding my knowledge to stay current with industry trends and best practices.
-              </AboutText>
-            </motion.div>
-          </AboutInfo>
-        </AboutContent>
-      </Container>
-    </AboutSection>
+              <p>
+                I'm a passionate Computer Science graduate student at Saint Louis University, 
+                specializing in Machine Learning and Software Development. With a strong 
+                foundation in computer science and extensive hands-on experience, I am dedicated 
+                to developing innovative technological solutions that address complex challenges.
+              </p>
+            </div>
+            
+            <div 
+              className="lead mb-4"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <p>
+                My academic journey and professional experiences have equipped me with a robust 
+                skill set in full-stack development, machine learning, and data science. I thrive 
+                on transforming theoretical knowledge into practical applications, consistently 
+                seeking opportunities to expand my technical expertise and contribute meaningfully 
+                to technological advancements.
+              </p>
+            </div>
+            
+            <div 
+              className="lead mb-4"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <p>
+                Beyond technical skills, I am a collaborative team player with strong 
+                communication abilities. I believe in continuous learning and am always 
+                excited to tackle new challenges that push the boundaries of technology 
+                and innovation.
+              </p>
+            </div>
+            
+            <div 
+              className="text-center mt-5"
+              data-aos="fade-up"
+              data-aos-delay="800"
+            >
+              <a 
+                href="#contact" 
+                className="btn btn-primary btn-lg"
+              >
+                Get In Touch
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 

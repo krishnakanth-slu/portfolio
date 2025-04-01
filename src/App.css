@@ -1,36 +1,217 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+/* Color Palette */
+:root {
+  /* Primary Color Palette */
+  --primary: #4285f4;      /* Vibrant Blue */
+  --primary-dark: #3367d6; /* Darker Blue */
+  --primary-light: #5e97f6;/* Lighter Blue */
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 70px;
-}
+  /* Neutral Colors */
+  --bg-primary: #f5f7fa;   /* Soft Light Blue-Gray */
+  --bg-secondary: #f0f2f5; /* Slightly Darker Blue-Gray */
+  --text-primary: #2c3e50; /* Deep Gray for Text */
+  --text-secondary: #34495e;/* Softer Gray */
 
-body {
-  line-height: 1.6;
-  color: #333;
-}
-
-main {
-  margin-top: 70px;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul,
-ol {
-  list-style-position: inside;
-}
-
-section {
-  min-height: 100vh;
+  /* Additional Colors */
+  --white: #ffffff;
+  --light-gray: #ecf0f1;
+  --dark: #333;
 }
 
 /* Add Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Base styles */
+html, body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-primary);
+  line-height: 1.6;
+  background-color: var(--bg-primary);
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+main {
+  margin-top: 70px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0 15px;
+}
+
+/* Section Backgrounds */
+#home {
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+#about { 
+  background-color: var(--white); 
+}
+
+#experience { 
+  background-color: var(--bg-primary); 
+}
+
+#education { 
+  background-color: var(--white); 
+}
+
+#projects { 
+  background-color: var(--bg-primary); 
+}
+
+#skills { 
+  background-color: var(--white); 
+}
+
+#contact { 
+  background-color: var(--bg-primary); 
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card styles */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: var(--white);
+  border: 1px solid var(--light-gray);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Images */
+.card-img-top {
+  transition: transform 0.5s ease;
+  max-width: 100%;
+  height: auto;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Social Icons Hover */
+.hover-translate-up:hover {
+  transform: translateY(-3px);
+  transition: transform 0.3s ease;
+  color: var(--primary);
+}
+
+.hover-text-primary:hover {
+  color: var(--primary) !important;
+  transition: color 0.3s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background: var(--white);
+    border-radius: 0 0 10px 10px;
+    padding: 1rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    min-height: auto;
+    padding: 3rem 15px;
+  }
+
+  main {
+    margin-top: 56px;
+  }
+}
+
+@media (max-width: 576px) {
+  section {
+    padding: 2rem 15px;
+  }
+}
+
+/* Print styles */
+@media print {
+  header, footer, .no-print {
+    display: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+}
+
+/* Dark theme */
+[data-bs-theme="dark"] {
+  --bs-body-bg: #212529;
+  --bs-body-color: #f8f9fa;
+}
+
+/* Section divider */
+.section-divider {
+  width: 80px;
+  height: 4px;
+  background: var(--primary);
+  margin: 1rem auto;
+}
+
+/* Additional hover and transition effects */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Scrollbar customization */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--bg-secondary);
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 20px;
+}
