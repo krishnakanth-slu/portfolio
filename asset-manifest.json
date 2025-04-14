@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6cf866e2.css",
+    "main.css": "/portfolio/static/css/main.3d689e07.css",
     "main.js": "/portfolio/static/js/main.15fe9c37.js",
     "static/js/864.afe3ba97.chunk.js": "/portfolio/static/js/864.afe3ba97.chunk.js",
     "static/js/961.36df2612.chunk.js": "/portfolio/static/js/961.36df2612.chunk.js",
@@ -13,7 +13,7 @@
     "static/media/Krishnakanth_Burugu_Resume.pdf": "/portfolio/static/media/Krishnakanth_Burugu_Resume.118221a5cb70e51346c8.pdf",
     "static/media/flask.svg": "/portfolio/static/media/flask.0eabf7e7b579578090f552335f294e0f.svg",
     "index.html": "/portfolio/index.html",
-    "main.6cf866e2.css.map": "/portfolio/static/css/main.6cf866e2.css.map",
+    "main.3d689e07.css.map": "/portfolio/static/css/main.3d689e07.css.map",
     "main.15fe9c37.js.map": "/portfolio/static/js/main.15fe9c37.js.map",
     "864.afe3ba97.chunk.js.map": "/portfolio/static/js/864.afe3ba97.chunk.js.map",
     "961.36df2612.chunk.js.map": "/portfolio/static/js/961.36df2612.chunk.js.map",
@@ -21,7 +21,7 @@
     "355.a7f381ac.chunk.js.map": "/portfolio/static/js/355.a7f381ac.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cf866e2.css",
+    "static/css/main.3d689e07.css",
     "static/js/main.15fe9c37.js"
   ]
 }
