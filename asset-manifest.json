@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.b79f15c7.css",
-    "main.js": "/portfolio/static/js/main.70af3f3d.js",
+    "main.js": "/portfolio/static/js/main.0558c446.js",
     "static/js/864.afe3ba97.chunk.js": "/portfolio/static/js/864.afe3ba97.chunk.js",
     "static/js/961.36df2612.chunk.js": "/portfolio/static/js/961.36df2612.chunk.js",
     "static/js/453.f64dd39f.chunk.js": "/portfolio/static/js/453.f64dd39f.chunk.js",
@@ -10,11 +10,11 @@
     "static/media/logo_slu.jpg": "/portfolio/static/media/logo_slu.858a559efc5e6bf4373b.jpg",
     "static/media/Warfarin_Img.png": "/portfolio/static/media/Warfarin_Img.fc7a0f1d9f16a884b40d.png",
     "static/media/vscode.png": "/portfolio/static/media/vscode.a61dc62c499ed3aeefdc.png",
-    "static/media/Krishnakanth_Burugu_Resume.pdf": "/portfolio/static/media/Krishnakanth_Burugu_Resume.118221a5cb70e51346c8.pdf",
+    "static/media/Krishnakanth_Burugu_Resume.pdf": "/portfolio/static/media/Krishnakanth_Burugu_Resume.2387aa20659bacf78c44.pdf",
     "static/media/flask.svg": "/portfolio/static/media/flask.0eabf7e7b579578090f552335f294e0f.svg",
     "index.html": "/portfolio/index.html",
     "main.b79f15c7.css.map": "/portfolio/static/css/main.b79f15c7.css.map",
-    "main.70af3f3d.js.map": "/portfolio/static/js/main.70af3f3d.js.map",
+    "main.0558c446.js.map": "/portfolio/static/js/main.0558c446.js.map",
     "864.afe3ba97.chunk.js.map": "/portfolio/static/js/864.afe3ba97.chunk.js.map",
     "961.36df2612.chunk.js.map": "/portfolio/static/js/961.36df2612.chunk.js.map",
     "453.f64dd39f.chunk.js.map": "/portfolio/static/js/453.f64dd39f.chunk.js.map",
@@ -22,6 +22,6 @@
   },
   "entrypoints": [
     "static/css/main.b79f15c7.css",
-    "static/js/main.70af3f3d.js"
+    "static/js/main.0558c446.js"
   ]
 }
