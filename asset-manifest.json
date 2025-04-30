@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.b79f15c7.css",
-    "main.js": "/portfolio/static/js/main.0558c446.js",
-    "static/js/864.afe3ba97.chunk.js": "/portfolio/static/js/864.afe3ba97.chunk.js",
+    "main.js": "/portfolio/static/js/main.bb0d0fc9.js",
+    "static/js/864.7e1e4d23.chunk.js": "/portfolio/static/js/864.7e1e4d23.chunk.js",
     "static/js/961.36df2612.chunk.js": "/portfolio/static/js/961.36df2612.chunk.js",
     "static/js/453.f64dd39f.chunk.js": "/portfolio/static/js/453.f64dd39f.chunk.js",
-    "static/js/355.a7f381ac.chunk.js": "/portfolio/static/js/355.a7f381ac.chunk.js",
+    "static/js/355.ecbfe21f.chunk.js": "/portfolio/static/js/355.ecbfe21f.chunk.js",
     "static/media/AboutMeImg.JPG": "/portfolio/static/media/AboutMeImg.4ae36dcfc39ec4bf20e4.JPG",
     "static/media/logo_slu.jpg": "/portfolio/static/media/logo_slu.858a559efc5e6bf4373b.jpg",
     "static/media/Warfarin_Img.png": "/portfolio/static/media/Warfarin_Img.fc7a0f1d9f16a884b40d.png",
     "static/media/vscode.png": "/portfolio/static/media/vscode.a61dc62c499ed3aeefdc.png",
-    "static/media/Krishnakanth_Burugu_Resume.pdf": "/portfolio/static/media/Krishnakanth_Burugu_Resume.2387aa20659bacf78c44.pdf",
+    "static/media/Krishnakanth_Burugu_Resume.pdf": "/portfolio/static/media/Krishnakanth_Burugu_Resume.c3c470356827d3cb030d.pdf",
     "static/media/flask.svg": "/portfolio/static/media/flask.0eabf7e7b579578090f552335f294e0f.svg",
     "index.html": "/portfolio/index.html",
     "main.b79f15c7.css.map": "/portfolio/static/css/main.b79f15c7.css.map",
-    "main.0558c446.js.map": "/portfolio/static/js/main.0558c446.js.map",
-    "864.afe3ba97.chunk.js.map": "/portfolio/static/js/864.afe3ba97.chunk.js.map",
+    "main.bb0d0fc9.js.map": "/portfolio/static/js/main.bb0d0fc9.js.map",
+    "864.7e1e4d23.chunk.js.map": "/portfolio/static/js/864.7e1e4d23.chunk.js.map",
     "961.36df2612.chunk.js.map": "/portfolio/static/js/961.36df2612.chunk.js.map",
     "453.f64dd39f.chunk.js.map": "/portfolio/static/js/453.f64dd39f.chunk.js.map",
-    "355.a7f381ac.chunk.js.map": "/portfolio/static/js/355.a7f381ac.chunk.js.map"
+    "355.ecbfe21f.chunk.js.map": "/portfolio/static/js/355.ecbfe21f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b79f15c7.css",
-    "static/js/main.0558c446.js"
+    "static/js/main.bb0d0fc9.js"
   ]
 }
